@@ -1,55 +1,55 @@
 # provider-directory-app
 
-A React Native provider directory application that allows users to browse, search, filter and view provider details.
+Kullanıcıların sağlık profesyonellerini listeleyebildiği, arayabildiği, filtreleyebildiği ve detaylarını görüntüleyebildiği React Native uygulaması.
 
-## Features
+## Özellikler
 
-- Provider listing screen
-- Search providers by name, category, city, country or biography
-- Filter providers by country, city and category
-- Provider detail screen
-- Loading state simulation
-- Empty state handling
-- Retry functionality
-- Reusable filter component
-- TypeScript support
+- Sağlayıcı listeleme ekranı
+- İsim, kategori, şehir, ülke veya biyografi alanlarına göre arama
+- Ülke, şehir ve kategoriye göre filtreleme
+- Sağlayıcı detay ekranı
+- Yüklenme (loading) durumu simülasyonu
+- Boş sonuç (empty state) yönetimi
+- Tekrar deneme (retry) aksiyonu
+- Yeniden kullanılabilir filtre bileşeni
+- TypeScript desteği
 
-## Project Structure
+## Proje Yapısı
 
 text src/ ├── components/ │   └── FilterComponent.tsx ├── data/ │   └── providerData.ts ├── screens/ │   ├── ProviderList.tsx │   ├── Filter.tsx │   └── ProviderDetail.tsx └── types.ts 
 
-## Technical Decisions
+## Teknik Tercihler
 
-### Mock Data
+### Mock Veri Kullanımı
 
-Provider data is stored locally in providerData.ts to keep the application simple and focused on the user interface and filtering experience.
+Sağlayıcı verileri providerData.ts dosyasında yerel olarak tutulmuştur. Bu sayede uygulamanın odak noktası kullanıcı arayüzü, arama ve filtreleme deneyimi olmuştur.
 
-### Reusable Components
+### Yeniden Kullanılabilir Bileşenler
 
-The filter form was implemented as a reusable component (FilterComponent) to improve maintainability and allow future reuse in different screens.
+Filtreleme formu, bakım kolaylığı sağlamak ve farklı ekranlarda tekrar kullanılabilmesine imkân vermek amacıyla FilterComponent olarak ayrı bir bileşen şeklinde geliştirilmiştir.
 
-### State Management
+### State Yönetimi
 
-The application uses React's built-in state management (useState and useEffect) since the project requirements are relatively small and do not require a global state solution.
+Proje kapsamı göz önünde bulundurularak global state yönetim kütüphaneleri yerine React'ın kendi state yönetimi yapıları (useState ve useEffect) kullanılmıştır.
 
-### User Experience
+### Kullanıcı Deneyimi
 
-The application includes:
+Uygulama içerisinde aşağıdaki senaryolar ele alınmıştır:
 
-- Loading state while applying filters
-- Empty state when no results are found
-- Quick reset option for search and filters
-- Basic null handling for missing provider information
+- Filtre uygulanırken yüklenme durumu gösterimi
+- Sonuç bulunamadığında boş durum ekranı
+- Arama ve filtreleri hızlıca temizleme seçeneği
+- Eksik veya boş veri durumları için temel null kontrolü
 
-## Installation
+## Kurulum
 
 bash npm install 
 
-## Run the Project
+## Projeyi Çalıştırma
 
 bash npx expo start 
 
-## Technologies
+## Kullanılan Teknolojiler
 
 - React Native
 - Expo
