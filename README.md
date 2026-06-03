@@ -49,6 +49,10 @@ bash npm install
 
 bash npx expo start 
 
+## Uygulama Önizleme
+
+[<video_link>](https://github.com/user-attachments/assets/0d2233c8-d678-4377-895e-addba143ffbc)
+
 ## Kullanılan Teknolojiler
 
 - React Native
